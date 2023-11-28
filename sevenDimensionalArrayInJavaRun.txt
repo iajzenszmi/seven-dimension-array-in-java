@@ -1,0 +1,97 @@
+(base) ian@ian-Latitude-E7440:~$ java sevdim2.java > sevdim2out.txt
+(base) ian@ian-Latitude-E7440:~$ cat sevdim2.java
+public class sevdim2
+ {
+      public static void main(String[] args) {
+             int i;
+             int j;
+             int k;
+             int l;
+             int m;
+             int n;
+             int o;
+             int [][][][][][][] array1 = new int[7][7][7][7][7][7][7];
+             for(i=1;i<=6;i++){
+              for(j=1;j<=6;j++){
+               for(k=1;k<=6;k++){
+                for(l=1;l<=6;l++){
+                 for(m=1;m<=6;m++){
+                  for(n=1;n<=6;n++){
+                   for(o=1;o<=6;o++){
+
+                      array1[o][n][m][l][k][j][i] = 1;
+                     System.out.printf("\n  %d  %d %d  %d  %d  %d  %d",o,n,m,l,k,j,i);
+                                      }
+                    }
+                   }
+                  }
+                  }
+                 }
+                 }
+                 }
+                 }
+(base) ian@ian-Latitude-E7440:~$ head sevdim2out.txt
+
+  1  1 1  1  1  1  1
+  2  1 1  1  1  1  1
+  3  1 1  1  1  1  1
+  4  1 1  1  1  1  1
+  5  1 1  1  1  1  1
+  6  1 1  1  1  1  1
+  1  2 1  1  1  1  1
+  2  2 1  1  1  1  1
+  3  2 1  1  1  1  1
+(base) ian@ian-Latitude-E7440:~$ tail sevdim2out.txt
+  3  5 6  6  6  6  6
+  4  5 6  6  6  6  6
+  5  5 6  6  6  6  6
+  6  5 6  6  6  6  6
+  1  6 6  6  6  6  6
+  2  6 6  6  6  6  6
+  3  6 6  6  6  6  6
+  4  6 6  6  6  6  6
+  5  6 6  6  6  6  6
+  6  6 6  6  6  6  6(base) ian@ian-Latitude-E7440:~$ sloccount sevdim2out.txt
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/ian/sevdim2out.txt to top_dir
+Categorizing files.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+0       top_dir         (none)
+SLOC total is zero, no further analysis performed.
+(base) ian@ian-Latitude-E7440:~$ sloccount sevdim2.java
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/ian/sevdim2.java to top_dir
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+29      top_dir         java=29
+
+
+Totals grouped by language (dominant language first):
+java:            29 (100.00%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 29
+Development Effort Estimate, Person-Years (Person-Months) = 0.00 (0.06)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.07 (0.85)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 0.07
+Total Estimated Cost to Develop                           = $ 656
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+(base) ian@ian-Latitude-E7440:~$
